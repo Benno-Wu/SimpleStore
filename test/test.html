@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./SimpleStore.js" type="module"></script>
+    <script type="module">
+        import { simpleStore, simpleSessionStorage, simpleLocalStorage } from "./SimpleStore.js";
+        window.onload = () => {
+            simpleStore.subscribe('a', (n, o) => console.log(n, o))
+            simpleStore.set('a', 1)
+            simpleSessionStorage.subscribe('a', (n, o) => { console.log(n, o) })
+            simpleSessionStorage.setItem('a', 1)
+            simpleLocalStorage.subscribe('a', (n, o) => { console.log(n, o) })
+            simpleLocalStorage.setItem('a', 1)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "simplestore",
+  "version": "0.1.0",
+  "description": "TBD",
+  "main": "SimpleStore.js",
+  "scripts": {},
+  "author": "BennoWu",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
